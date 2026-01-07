@@ -138,7 +138,7 @@ Dependency array به React می‌گوید <strong>چه زمانی effect دو�
 
 <hr style="border: 1px solid #f0c27b;"/>
 
-<h3 style="color: #b36b00;">نکات کلیدی</h3>
+<h3 style="color: #7c4b02ff;">نکات کلیدی</h3>
 
 <ul>
   <li>Effectها بعد از render اجرا می‌شوند، نه هنگام render.</li>
