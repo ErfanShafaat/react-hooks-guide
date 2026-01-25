@@ -36,6 +36,24 @@ In simple terms:
 
 <hr style="border: 1px solid #a0c4ff;"/>
 
+### useRef and Controlled vs Uncontrolled Components
+
+In React, form elements can be either **controlled** or **uncontrolled**.
+
+#### Controlled Components
+- Form data is managed by React state (`useState`).
+- Every change causes a re-render.
+- Suitable when you need validation, live UI updates, or strict control.
+
+#### Uncontrolled Components
+- Form data is managed by the DOM itself.
+- Values are accessed using `useRef`.
+- No re-render on input change.
+
+**useRef is commonly used with uncontrolled components** to read values directly from the DOM when needed.
+
+<hr style="border: 1px solid #a0c4ff;"/>
+
 ### Key Points
 
 - `useRef` returns an object with a `.current` property.
@@ -87,6 +105,24 @@ In simple terms:
 
 <hr style="border: 1px solid #f0c27b;"/>
 
+### ارتباط useRef با Controlled و Uncontrolled Components
+
+در React دو نوع کامپوننت فرمی داریم:
+
+#### 🟢 Controlled Component
+- مقدار input توسط state مدیریت می‌شود (`useState`)
+- با هر تغییر، کامپوننت re-render می‌شود
+- مناسب اعتبارسنجی و کنترل کامل UI
+
+#### 🔵 Uncontrolled Component
+- مقدار input توسط خود DOM مدیریت می‌شود
+- برای دسترسی به مقدار از `useRef` استفاده می‌کنیم
+- تغییر مقدار باعث re-render نمی‌شود
+
+✅ **useRef ابزار اصلی کار با Uncontrolled Components است**
+
+<hr style="border: 1px solid #f0c27b;"/>
+
 ### عملکرد useRef (به طور مفهومی)
 
 <ol>
@@ -108,9 +144,9 @@ In simple terms:
 <ul>
   <li><code>useRef</code> یک آبجکت با پراپرتی <code>current</code> برمی‌گرداند.</li>
   <li>تغییر <code>current</code> باعث re-render نمی‌شود.</li>
-  <li>برای DOM و مقادیر mutable بسیار مناسب است.</li>
+  <li>برای Uncontrolled Component و DOM بسیار مناسب است.</li>
   <li>در هر render همان ref قبلی حفظ می‌شود.</li>
-  <li>با <code>useState</code> تفاوت اساسی دارد.</li>
+  <li>برای UI reactive بهتر است از <code>useState</code> استفاده شود.</li>
 </ul>
 
 <hr style="border: 1px solid #f0c27b;"/>
