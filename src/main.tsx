@@ -3,13 +3,15 @@ import { createRoot } from 'react-dom/client'
 // import Counter from './hooks/UseState/UseStateExample'
 // import UseEffectBestPractices from './hooks/useEffect/useEffecetExample'
 // import UseMemoExample from './hooks/useMemo/useMemo'
-import UseRefExample from './hooks/useRef/useRef'
+// import UseRefExample from './hooks/useRef/useRef'
+import UseCallBackExample from './hooks/useCallback/useCallBack'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
    {/* <Counter/> */}
    {/* <UseEffectBestPractices/> */}
   {/* <UseMemoExample/> */}
-  <UseRefExample/>
+  {/* <UseRefExample/> */}
+  <UseCallBackExample/>
   </StrictMode>,
 )
