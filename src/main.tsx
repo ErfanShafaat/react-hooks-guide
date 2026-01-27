@@ -1,19 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import UseLaoyoutEffectExample from './hooks/useLayoutEffect/UseLayoutEffect'
-// import Counter from './hooks/UseState/UseStateExample'
-// import UseEffectBestPractices from './hooks/useEffect/useEffecetExample'
-// import UseMemoExample from './hooks/useMemo/useMemo'
-// import UseRefExample from './hooks/useRef/useRef'
-// import UseCallBackExample from './hooks/useCallback/useCallBack'
+import TodoReducerExample from './hooks/useReducer/UseReducer'
+
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-   {/* <Counter/> */}
-   {/* <UseEffectBestPractices/> */}
-  {/* <UseMemoExample/> */}
-  {/* <UseRefExample/> */}
-  {/* <UseCallBackExample/> */}
-  <UseLaoyoutEffectExample/>
+   <TodoReducerExample/>
   </StrictMode>,
 )
